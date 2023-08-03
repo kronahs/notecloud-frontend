@@ -34,7 +34,7 @@ function App() {
 
   const addNotes = async (title, desc, category) => {
     try {
-      await api.post('/note', {
+      await api.post('/notes', {
         title: title,
         description: desc,
         category: category
@@ -54,7 +54,7 @@ function App() {
 
   const deleteNote = async (noteId) => {
     try {
-      await api.delete(`/note/${noteId}`);
+      await api.delete(`/notes/${noteId}`);
       fetchNotes();
     } catch (error) {
       if (error.response) {
