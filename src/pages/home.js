@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Card from "./components/cards";
-import api from './api/notes';
-import PopoutForm from './components/popout';
-import logo from './assets/logo3.png'
+import Card from "../components/cards";
+import api from '../api/notes';
+import PopoutForm from '../components/popout';
+import logo from '../assets/logo3.png'
 import {FaCog,FaMoon} from 'react-icons/fa'
-import NoteDetailCard from './components/note-detail';
+import NoteDetailCard from '../components/note-detail';
 
 function HomePage() {
   const [isFormVisible, setIsFormVisible] = useState(false);

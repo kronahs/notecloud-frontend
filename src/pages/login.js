@@ -1,6 +1,7 @@
 function LogInPage(){
     return (
         <>
+        <p>hi</p>
         </>
     );
 }
